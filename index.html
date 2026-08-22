@@ -7,49 +7,38 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #FFF8F0; color: #1a1a1a; }
-
-/* Header */
 .header { background: linear-gradient(135deg, #8B0000, #C41E3A); padding: 40px 20px; text-align: center; }
 .header-logo { font-size: 32px; font-weight: 900; color: #fff; letter-spacing: 1px; }
 .header-gold { color: #D4AF37; }
 .header-sub { font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 6px; }
 .header-tagline { font-size: 12px; color: #D4AF37; margin-top: 8px; font-style: italic; }
-
-/* Nav */
 .nav { background: #7a0000; padding: 12px 20px; display: flex; gap: 16px; overflow-x: auto; justify-content: center; flex-wrap: wrap; }
 .nav a { color: #D4AF37; text-decoration: none; font-size: 12px; font-weight: 700; white-space: nowrap; }
 .nav a:hover { color: #fff; }
-
-/* Container */
 .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-
-/* Section */
 .section { background: #fff; border-radius: 16px; padding: 28px; margin-bottom: 20px; border: 1px solid #f0e0e0; box-shadow: 0 2px 8px rgba(139,0,0,0.06); }
 .section-title { font-size: 20px; font-weight: 800; color: #8B0000; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #D4AF37; }
 .section p { font-size: 14px; color: #444; line-height: 1.8; margin-bottom: 12px; }
 .section ul { padding-left: 20px; margin-bottom: 12px; }
 .section ul li { font-size: 14px; color: #444; line-height: 1.8; margin-bottom: 6px; }
-
-/* Info Box */
 .info-box { background: #fff8f0; border-left: 4px solid #D4AF37; padding: 16px; border-radius: 8px; margin-bottom: 16px; }
 .info-box p { color: #555; font-size: 13px; line-height: 1.7; margin: 0; }
-
-/* Warning Box */
 .warning-box { background: #fff0f2; border-left: 4px solid #C41E3A; padding: 16px; border-radius: 8px; margin-bottom: 16px; }
 .warning-box p { color: #8B0000; font-size: 13px; line-height: 1.7; margin: 0; font-weight: 600; }
-
-/* Contact Card */
+.success-box { background: #f0fff4; border-left: 4px solid #2e7d32; padding: 16px; border-radius: 8px; margin-bottom: 16px; }
+.success-box p { color: #2e7d32; font-size: 13px; line-height: 1.7; margin: 0; font-weight: 600; }
 .contact-card { background: linear-gradient(135deg, #8B0000, #C41E3A); border-radius: 14px; padding: 24px; color: #fff; margin-bottom: 16px; }
 .contact-card h3 { font-size: 18px; font-weight: 800; color: #D4AF37; margin-bottom: 14px; }
 .contact-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 13px; }
 .contact-row:last-child { border-bottom: none; }
 .contact-label { color: rgba(255,255,255,0.7); }
 .contact-value { color: #fff; font-weight: 700; }
-
-/* Badge */
 .badge { display: inline-block; background: #D4AF37; color: #8B0000; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 800; margin-bottom: 12px; }
-
-/* Footer */
+.pricing-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+.pricing-table th { background: #8B0000; color: #D4AF37; padding: 12px; text-align: left; font-size: 13px; }
+.pricing-table td { padding: 12px; border-bottom: 1px solid #f0e0e0; font-size: 13px; color: #444; }
+.pricing-table tr:last-child td { border-bottom: none; }
+.pricing-table tr:nth-child(even) td { background: #fff8f0; }
 .footer { background: #8B0000; color: rgba(255,255,255,0.7); text-align: center; padding: 24px 20px; font-size: 12px; line-height: 1.8; }
 .footer-gold { color: #D4AF37; font-weight: 700; }
 </style>
@@ -66,6 +55,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <a href="#terms">Terms & Conditions</a>
   <a href="#privacy">Privacy Policy</a>
   <a href="#payments">Payment Policy</a>
+  <a href="#refund">Refund Policy</a>
   <a href="#grievance">Grievance</a>
   <a href="#contact">Contact</a>
 </div>
@@ -78,25 +68,24 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="section-title">Terms & Conditions</div>
     <p>Last updated: August 2026</p>
     <p>Welcome to TamilKalyanam, a Tamil Hindu matrimony platform operated by BETHWOLF Industries, Erode, Tamil Nadu. By registering or using this platform, you agree to the following terms.</p>
-
     <div class="info-box">
       <p>TamilKalyanam is an intermediary platform under the Information Technology Act, 2000 and IT Rules 2021. We connect Tamil Hindu marriage seekers and are not responsible for individual user conduct.</p>
     </div>
-
-    <p><strong>1. Eligibility:</strong> You must be 18 years or older to register. By registering, you confirm you are of legal marriageable age as per Indian law.</p>
+    <p><strong>1. Eligibility:</strong> You must be 18 years or older to register. By registering, you confirm you are of legal marriageable age as per Indian law. Minors are strictly prohibited.</p>
     <p><strong>2. Account Responsibility:</strong> You are responsible for all activity under your account. Do not share your OTP or account access with anyone.</p>
     <p><strong>3. Accurate Information:</strong> All profile information must be accurate and truthful. False profiles will be permanently banned without refund.</p>
-    <p><strong>4. Prohibited Content:</strong> Users must not share phone numbers, email addresses, social media handles, or external links in chat before paying the connect fee.</p>
-    <p><strong>5. Connect System:</strong> Pay Rs 10 to unlock 24 hours chat access with any profile. This is a one-time fee per profile per 24 hour period.</p>
-    <p><strong>6. Green Badge:</strong> Pay Rs 100/month to activate Green Badge status showing you as an Active Marriage Seeker.</p>
-    <p><strong>7. Platform Safety:</strong> We reserve the right to ban any user who violates these terms, sends inappropriate content, or misuses the platform.</p>
-
+    <p><strong>4. Prohibited Content:</strong> Users must not share phone numbers, email addresses, social media handles, or external links in chat before the other person accepts their details request.</p>
+    <p><strong>5. Connect System:</strong> Pay Rs 10 to unlock 7 days chat access with any profile. This is a one-time fee per profile per 7 day period. Chat expires automatically after 7 days.</p>
+    <p><strong>6. Green Badge:</strong> Pay Rs 100/month to activate Green Badge (TRUE SEEKER status). This is a trust signal only and does NOT include chat access. Buy Rs 10 connect separately for chat.</p>
+    <p><strong>7. Founding Member Badge:</strong> First 500 registered users receive a permanent 🥇 Founding Member badge. This badge cannot be purchased, transferred, or earned after 500 members.</p>
+    <p><strong>8. Profile Details:</strong> Sensitive details including phone number, horoscope, and family information are locked by default. These are shared only when the other user explicitly accepts your request.</p>
+    <p><strong>9. Platform Safety:</strong> We reserve the right to ban any user who violates these terms, sends inappropriate content, or misuses the platform.</p>
     <div class="warning-box">
       <p>⚠️ Any attempt to misuse the platform, commit fraud, or harm other users will result in immediate permanent ban and may be reported to law enforcement under IT Act 2000, Section 66.</p>
     </div>
-
-    <p><strong>8. Jurisdiction:</strong> All disputes are subject to the jurisdiction of courts in Erode, Tamil Nadu, India.</p>
-    <p><strong>9. Amendments:</strong> We reserve the right to modify these terms at any time. Continued use of the platform constitutes acceptance of updated terms.</p>
+    <p><strong>10. Criminal Activity:</strong> Any user found engaging in criminal activity will face immediate permanent account deletion. All user data including phone number and activity logs will be shared with Tamil Nadu Cyber Crime authorities.</p>
+    <p><strong>11. Jurisdiction:</strong> All disputes are subject to the jurisdiction of courts in Erode, Tamil Nadu, India.</p>
+    <p><strong>12. Amendments:</strong> We reserve the right to modify these terms at any time. Continued use of the platform constitutes acceptance of updated terms.</p>
   </div>
 
   <!-- Privacy Policy -->
@@ -105,18 +94,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="section-title">Privacy Policy</div>
     <p>Last updated: August 2026</p>
     <p>BETHWOLF Industries is committed to protecting your personal data in accordance with the Digital Personal Data Protection Act (DPDPA) 2023 and IT Rules 2021.</p>
-
     <p><strong>Data We Collect:</strong></p>
     <ul>
       <li>Phone number (for authentication and identity)</li>
       <li>Name, age, gender, district, caste, occupation</li>
       <li>Education qualification, income, height</li>
-      <li>Horoscope details (optional, shared by consent)</li>
+      <li>Horoscope details (optional, shared by consent only)</li>
       <li>Profile photo (optional)</li>
       <li>Chat messages (stored securely)</li>
       <li>Payment transaction records</li>
     </ul>
-
     <p><strong>How We Use Your Data:</strong></p>
     <ul>
       <li>To display your profile to potential matches</li>
@@ -125,14 +112,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <li>To maintain platform safety and prevent fraud</li>
       <li>To comply with legal obligations</li>
     </ul>
-
     <div class="info-box">
-      <p>We never sell your personal data to third parties. Your phone number is never shared without your explicit consent through the in-app request system.</p>
+      <p>We never sell your personal data to third parties. Your phone number is never shared without your explicit consent through the in-app request system. Sensitive details are locked by default and shared only on mutual acceptance.</p>
     </div>
-
-    <p><strong>Data Storage:</strong> All data is stored on Supabase servers in Singapore with encryption at rest and in transit.</p>
+    <p><strong>Data Storage:</strong> All data is stored on Supabase servers in Singapore with encryption at rest and in transit using SSL/TLS.</p>
     <p><strong>Data Retention:</strong> Your data is retained as long as your account is active. On account deletion, all personal data is permanently removed within 30 days.</p>
-    <p><strong>Your Rights:</strong> You have the right to access, correct, or delete your personal data at any time through the app settings.</p>
+    <p><strong>Your Rights:</strong> You have the right to access, correct, or delete your personal data at any time through the app settings or by contacting support.</p>
   </div>
 
   <!-- Payment Policy -->
@@ -141,19 +126,94 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="section-title">Payment Policy</div>
 
     <div class="warning-box">
-      <p>⚠️ ALL PAYMENTS ARE STRICTLY NON-REFUNDABLE. By making a payment, you agree to this non-refund policy.</p>
+      <p>⚠️ ALL PAYMENTS ARE STRICTLY NON-REFUNDABLE once the service is activated. By making any payment, you confirm you have read and agree to this policy.</p>
     </div>
 
-    <p><strong>Connect Fee — Rs 10:</strong> Unlocks 24 hours unlimited chat access with one profile. Expires automatically after 24 hours. Non-refundable once activated.</p>
-    <p><strong>Green Badge — Rs 100/month:</strong> Activates your Green Badge for 30 days. Shows you as an Active Marriage Seeker. Appears at the top of search results. Non-refundable.</p>
+    <p><strong>Pricing Structure:</strong></p>
+    <table class="pricing-table">
+      <tr>
+        <th>Service</th>
+        <th>Price</th>
+        <th>Duration</th>
+        <th>What You Get</th>
+      </tr>
+      <tr>
+        <td>Connect Fee</td>
+        <td><strong>Rs 10</strong></td>
+        <td>7 Days</td>
+        <td>Unlimited chat with one profile for 7 days</td>
+      </tr>
+      <tr>
+        <td>Green Badge</td>
+        <td><strong>Rs 100/month</strong></td>
+        <td>30 Days</td>
+        <td>TRUE SEEKER trust badge only — NOT chat access</td>
+      </tr>
+    </table>
 
     <div class="info-box">
-      <p>All payments are processed securely via Razorpay, an RBI authorised payment gateway. We support UPI, Cards, Net Banking, and all major payment methods.</p>
+      <p><strong>Important:</strong> Green Badge (Rs 100/month) is a TRUST SIGNAL only. It shows you are a serious marriage seeker. It does NOT include chat access. To chat with someone, you must separately pay Rs 10 connect fee.</p>
     </div>
 
-    <p><strong>Payment Failures:</strong> If your payment fails but amount is deducted, it will be refunded automatically by your bank within 5-7 business days.</p>
-    <p><strong>Disputes:</strong> For genuine payment disputes, contact support@tamilkalyanam.com within 48 hours with your transaction ID.</p>
+    <p><strong>Connect Fee — Rs 10:</strong> Unlocks 7 days unlimited chat access with one specific profile. Chat expires automatically after 7 days from activation. To continue chatting after expiry, pay Rs 10 again. Non-refundable once chat window opens.</p>
+
+    <p><strong>Green Badge — Rs 100/month:</strong> Activates your GREEN BADGE (TRUE SEEKER status) for 30 days. Shows your serious marriage intent to other users. Appears prominently in search results. Expires after 30 days — renewal at Rs 100. Non-refundable once badge appears on profile.</p>
+
+    <div class="info-box">
+      <p>All payments are processed securely via Razorpay, an RBI authorised payment gateway. We support UPI, Cards, Net Banking, and all major payment methods. Google gets zero cut — payments processed outside app via browser for your security.</p>
+    </div>
+
+    <p><strong>Payment Failures:</strong> If your payment fails but amount is deducted, it will be refunded automatically by your bank within 5-7 business days. Contact your bank or Razorpay support for failed payment issues.</p>
+
+    <p><strong>Free Phase:</strong> First 500 registered members get all features completely FREE. Connect, chat, and access all platform features at zero cost. Payment system activates only after 500 members are registered.</p>
+
     <p><strong>GST:</strong> GST as applicable will be charged on all transactions as per Government of India regulations.</p>
+  </div>
+
+  <!-- Refund Policy — FIX 17 -->
+  <div class="section" id="refund">
+    <div class="badge">Refund Policy</div>
+    <div class="section-title">Refund Policy</div>
+
+    <div class="warning-box">
+      <p>⚠️ ALL PAYMENTS ARE STRICTLY NON-REFUNDABLE under any circumstances once the service has been activated.</p>
+    </div>
+
+    <p><strong>When Does Service Activate?</strong></p>
+    <ul>
+      <li><strong>Rs 10 Connect Fee</strong> — Service activates the moment the chat window opens with the connected profile. Once chat is open, no refund is possible under any circumstances.</li>
+      <li><strong>Rs 100 Green Badge</strong> — Service activates the moment the Green Badge (TRUE SEEKER) appears on your profile. Once badge is visible, no refund is possible under any circumstances.</li>
+    </ul>
+
+    <p><strong>No Refund In These Cases:</strong></p>
+    <ul>
+      <li>Chat expired after 7 days without use</li>
+      <li>Other user did not respond to your messages</li>
+      <li>Other user blocked you after connect</li>
+      <li>You changed your mind after payment</li>
+      <li>Profile did not match your expectations</li>
+      <li>Green Badge did not increase your connections</li>
+      <li>Account was banned due to policy violations</li>
+      <li>Technical issues on user's device</li>
+      <li>App uninstalled after payment</li>
+    </ul>
+
+    <div class="success-box">
+      <p>✅ EXCEPTION — Refund is possible ONLY if: Payment was deducted but service was NOT activated due to a verified technical error on our platform. Contact support within 48 hours with your Razorpay transaction ID as proof.</p>
+    </div>
+
+    <p><strong>How To Request Exception Refund:</strong></p>
+    <ul>
+      <li>Email: support@tamilkalyanam.com</li>
+      <li>Subject: Refund Request — [Your Phone Number]</li>
+      <li>Include: Razorpay transaction ID, screenshot of payment, description of issue</li>
+      <li>Deadline: Must contact within 48 hours of payment</li>
+      <li>Decision: Final decision within 7 business days</li>
+    </ul>
+
+    <div class="info-box">
+      <p>By making any payment on TamilKalyanam, you confirm that you have read, understood, and agreed to this refund policy. You confirm all checkbox agreements shown before payment were ticked willingly.</p>
+    </div>
   </div>
 
   <!-- Grievance -->
@@ -161,7 +221,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="badge">IT Rules 2021</div>
     <div class="section-title">Grievance Officer</div>
     <p>As required under Rule 4 of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, we have appointed a Grievance Officer.</p>
-
     <div class="contact-card">
       <h3>Grievance Officer Details</h3>
       <div class="contact-row">
@@ -185,15 +244,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <span class="contact-value">Within 15 days</span>
       </div>
     </div>
-
-    <p>Users may submit grievances related to content, privacy, account issues, or any platform-related concerns. All grievances will be acknowledged within 24 hours and resolved within 15 days.</p>
+    <p>Users may submit grievances related to content, privacy, account issues, payment disputes, or any platform-related concerns. All grievances will be acknowledged within 24 hours and resolved within 15 days.</p>
   </div>
 
   <!-- Contact -->
   <div class="section" id="contact">
     <div class="badge">Support</div>
     <div class="section-title">Contact Us</div>
-
     <div class="contact-card">
       <h3>BETHWOLF Industries</h3>
       <div class="contact-row">
@@ -217,9 +274,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         <span class="contact-value">Within 72 hours</span>
       </div>
     </div>
-
     <div class="info-box">
       <p>For fastest support, email us with your registered phone number and a description of your issue. We respond to all genuine queries within 72 hours on business days.</p>
+    </div>
+    <div class="warning-box">
+      <p>⚠️ For payment refund requests, contact within 48 hours with your Razorpay transaction ID. Requests after 48 hours will not be considered.</p>
     </div>
   </div>
 
@@ -230,6 +289,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <p>Operated by BETHWOLF Industries, Erode, Tamil Nadu — 638001</p>
   <p>© 2026 BETHWOLF Industries. All rights reserved.</p>
   <p>Governed by the laws of India. Jurisdiction: Erode, Tamil Nadu.</p>
+  <p style="margin-top:8px; font-size:11px;">Connect Fee: Rs 10 per connect — 7 days chat access | Green Badge: Rs 100/month trust signal</p>
 </div>
 
 </body>
